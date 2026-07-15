@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cormorant Garamond", serif;
+}
+body{
+    background-color: #faf7f2;
+}
+.navbar{
+    height: 90px;
+    padding: 5px 5px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #faf7f2;
+    font-size: 33px;
+    font-weight: 700;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    width: 80px;
+    height: 80px; 
+    background-size: cover;
+    background-image: url('coffee logo1.jpg');
+    border-radius: 100%;
+}
+.order-now{
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+}
+.hero-section{
+    background-image: url(hero-img.png);
+    background-size: cover;
+    background-position: center;
+    height: 530px;
+    text-align: center;
+    padding-top: 8%;
+    font-family: "Dancing Script", cursive;
+}
+.hero-section h1{
+    font-size: 5.5rem;
+    font-family: "Dancing Script", cursive;
+}
+.hero-section h2{
+    font-size: 3.5rem;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+}
+.hero-section p{
+    font-size: 1.7rem;
+    padding-bottom: 10px;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+}
+.explore-menu{
+    width: 250px;
+    height: 80px;
+    font-size: 20px;
+    background-color: #f5e1da;
+    border: 3px solid black;
+    font-family: "Dancing Script", cursive;
+}
+.explore-menu:hover {
+  background-color: #f5e1da; 
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.Menu{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 15px; 
+    width: 100%;
+    background-color: #f5e1da;
+}
+.explore-menu:hover h2{
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.card{
+    height: 350px;
+    width: calc(33.333% - 10px);
+    border: 2px solid black;
+    border-radius: 15%;
+    background-color:#f5e1da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+}
+.card h3{
+    text-align: center;
+    font-size: 1.9rem;
+}
+.card p{
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+button{
+    border-radius: 20px;
+    background-color: #edd3a7
+}
+button:hover{
+    background-color: #753b02;
+    transform: scale(1.05);
+}
+.reviews-section{
+    flex-wrap: wrap; 
+    gap: 15px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5e1da;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.review{
+    background-color: #f5e1da;
+    border: 2px solid #753b02;
+    padding: 20px;
+    text-align: center;
+}
+.reviews-title{
+    background-color: #f5e1da;
+    font-size: 5rem;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+}
+.about-section{
+    background-color: #f5e1da;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-image: url('about-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Dancing Script", cursive;
+}
+
+.about-section h2{
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-family: "Dancing Script", cursive;
+}
+.about-section h1{
+    font-size: 5rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-family: "Dancing Script", cursive;
+}
+.about-section p{
+    font-size: 1.7rem;
+    padding-bottom: 20px;
+    font-family: "Dancing Script", cursive;
+}
+.about-section .small{
+    font-weight: 600;
+    font-family: "Dancing Script", cursive;
+}
+.summary{
+    font-size: 3rem;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+.contact-section h1{
+    font-size: 4rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #f5e1da;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+background-color: #f5e1da;
+font-size: 1.2rem;
+width: 100%; /* Full width */
+padding: 12px; /* Some padding */ 
+border: 1px solid #ccc; /* Gray border */
+border-radius: 4px; /* Rounded borders */
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; /* Add a top margin */
+margin-bottom: 16px; /* Bottom margin */
+resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 60px;
+  width: 100px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.container{
+    font-size: 1.7rem;
+}
+.footer {
+    background-color: #f5e1da;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid black;
+}
+.footer-content {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    img {
+        width: 120px;
+        height: 120px;
+    }
+}
